@@ -1,5 +1,6 @@
 import vnode from './vnode.js'
 
+// h函数的作用是生成vnode
 export function h(sel, data, c) {
   if (arguments.length !== 3) throw new Error('h函数需要传入3个参数')
   if (typeof c === 'string' || typeof c === 'number') {

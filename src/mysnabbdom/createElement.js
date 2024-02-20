@@ -1,3 +1,4 @@
+// 作用: 创建真实DOM节点
 export function createElement(newVnode) {
   const newDom = document.createElement(newVnode.sel);
   if (newVnode.text !== '' && (newVnode.children === undefined || newVnode.children.length === 0)) {
